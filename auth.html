@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Войти</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page">
+    <div class="wrap">
+      <p class="wrap__title">Войти в электронную школу</p>
+      <div class="wrap-login">
+        <div class="form"> <!--form--reg-->
+          <form action="#" class="form-auth">
+            <div class="form-item">
+              <p class="form-item__title">Логин</p>
+              <p class="form-item__desc">Укажите логин, который вам выдали.</p>
+              <input type="text" class="form-item__input">
+            </div>
+            <div class="form-item">
+              <p class="form-item__title">Пароль</p>
+              <p class="form-item__desc">Укажите ваш пароль</p>
+              <input type="text" class="form-item__input">
+            </div>
+            <div class="form-item form-item--btns">
+              <button class="form-item__btn ripple">Войти</button>
+              <div class="form-link">
+                <a href="#" class="form-link__item form-link__reset">Забыли пароль?</a>
+                <a href="#" class="form-link__item form-link__reg">Регистрация</a>
+              </div>
+            </div>
+            <div class="form-item form-item--footer">
+              <p class="form-item__desc form-item__desc--dark">
+                Нажимая на кнопку, вы даете согласие на обработку персональных данных
+              </p>
+            </div>
+          </form>
+          <form action="#" class="form-reg">
+            <div class="form-item">
+              <p class="form-item__title">E-Mail</p>
+              <p class="form-item__desc">Введите почту, на которую вы бы хотели зарегистрировать аккаунт</p>
+              <input type="text" class="form-item__input">
+            </div>
+            <div class="form-item">
+              <p class="form-item__title">Логин</p>
+              <p class="form-item__desc">Введите логин для авторизации</p>
+              <input type="text" class="form-item__input">
+            </div>
+            <div class="form-item">
+              <p class="form-item__title">Вы не робот?</p>
+              <p class="form-item__desc">Подтвердите. что вы не робот!</p>
+              <input type="text" class="form-item__input">
+            </div>
+            <div class="form-item form-item--btns">
+              <button class="form-item__btn ripple">Регистрация</button>
+              <div class="form-link">
+                <a href="#" class="form-link__item">Авторизация</a>
+              </div>
+            </div>
+            <div class="form-item form-item--footer">
+              <p class="form-item__desc form-item__desc--dark">
+                Нажимая на кнопку, вы даете согласие на обработку персональных данных
+              </p>
+              <p class="form-item__desc form-item__desc--black">
+                Пароль прийдет на вашу почту!
+              </p>
+            </div>
+          </form>
+          <from class="form-reset">
+            <div class="form-item">
+              <p class="form-item__title">E-Mail</p>
+              <p class="form-item__desc">Введите почту, на которую вы бы хотели зарегистрировать аккаунт</p>
+              <input type="text" class="form-item__input">
+            </div>
+            <div class="form-item">
+              <p class="form-item__title">Вы не робот?</p>
+              <p class="form-item__desc">Подтвердите. что вы не робот!</p>
+              <input type="text" class="form-item__input">
+            </div>
+            <div class="form-item form-item--btns">
+              <button class="form-item__btn ripple">Восстановить</button>
+              <div class="form-link">
+                <a href="#" class="form-link__item">Авторизация</a>
+                <a href="#" class="form-link__item">Регистрация</a>
+              </div>
+            </div>
+            <div class="form-item form-item--footer">
+              <p class="form-item__desc form-item__desc--dark">
+                Нажимая на кнопку, вы даете согласие на обработку персональных данных
+              </p>
+            </div>
+          </from>
+        </div>
+        <div class="form-image" style="display: none"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/login.js"></script>
+  <script>
+    window.onload = () => {
+      document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+      });
+
+    }
+  </script>
+</body>
+
+</html>
