@@ -1,10 +1,13 @@
 $(document).ready(function() {
-  // $('.form-image').css('display','none');
   $('.form-link__reg').click(function() {
-    $('.form-image').hide();
-    $('form').animate({height: "toggle", opacity: "toggle"}, "show");
-    // $('.form-auth').slideToggle();
-    // $('.form-reg').slideToggle();
+    // $('form').animate({height: "toggle", opacity: "toggle"}, "show");
+    $('.form-reset').slideToggle();
+    $('.form-auth').slideToggle();
+    $('.form-reg').slideToggle();
     $('.form').addClass( "form--reg" );
  });
+  $('.form-link__reset').click(function() {
+    $('.form-reset').slideToggle();
+    $('.form-auth').slideToggle();
+  });
 });

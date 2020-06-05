@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель Учителя</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/vanilla-calendar-min.css">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page">
+    <!-- <div class="container"> -->
+    <div class="sidebar">
+      <div class="profile">
+        <img src="img/avatar/teacher.png" alt="" class="profile__avatar">
+        <p class="profile__name">Татьяна Бирюкова</p>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="menu-link">
+              <div class="menu-link__icon">
+                <i class="fas fa-th-large"></i>
+              </div>
+              <p class="menu-link__title">Рабочая панель</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu-link">
+              <div class="menu-link__icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <p class="menu-link__title">Моя организация</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu-link">
+              <div class="menu-link__icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <p class="menu-link__title">Управление базой</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu-link">
+              <div class="menu-link__icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <p class="menu-link__title">Почта</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu-link">
+              <div class="menu-link__icon">
+                <i class="fas fa-paste"></i>
+              </div>
+              <p class="menu-link__title">Журнал</p>
+            </div>
+          </li>
+          <p class="menu__info">Прочее</p>
+          <li class="menu__item">
+            <div class="menu-link">
+              <div class="menu-link__icon">
+                <i class="fas fa-th-large"></i>
+              </div>
+              <p class="menu-link__title">Главные настройки</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="menu-link">
+              <div class="menu-link__icon">
+                <i class="fas fa-door-open"></i>
+              </div>
+              <p class="menu-link__title">Выход</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page__сontent">
+      <div class="workspace">
+        <p class="page__title">Уведомление</p>
+        <div class="content">
+          <div class="wrapper">
+            <div class="pushs">
+              <!-- <p class="page__title">Уведомление</p> -->
+              <div class="push">
+                <div class="push-item">
+                  <div class="push-item__icon">
+                    <i class="fas fa-user-friends"></i>
+                  </div>
+                  <p class="push-item__count">502</p>
+                  <p class="push-item__desc">Колличество учеников</p>
+                </div>
+                <div class="push-item">
+                  <div class="push-item__icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <p class="push-item__count">32</p>
+                  <p class="push-item__desc">Новых сообщений</p>
+                </div>
+                <div class="push-item">
+                  <div class="push-item__icon">
+                    <i class="fas fa-bell"></i>
+                  </div>
+                  <p class="push-item__count">2</p>
+                  <p class="push-item__desc">Уведомлений</p>
+                </div>
+                <div class="push-item push-item--blue">
+                  <div class="push-item__icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                  </div>
+                  <p class="push-item__count">5</p>
+                  <p class="push-item__desc">Уроков сегодня</p>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-right">
+              <div id="Calendar" class="vanilla-calendar"></div>
+              <div class="messages">
+                <div class="messages-text">
+                  <p class="messages__title">Новые сообщения</p>
+                  <span class="messages__desc">Все сообщения</span>
+                </div>
+                <div class="message">
+                  <div class="message-item">
+                    <!-- <img src="" alt="" class="messages-item__icon"> -->
+                    <div src="" alt="" class="message__icon"></div>
+                    <div class="message-text">
+                      <p class="message-text__name">Имя Фамилия | 9 "A"</p>
+                      <p class="message-text__desc">Домашнее задание за 30.05.2020</p>
+                    </div>
+                    <div class="message-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="message-item">
+                    <!-- <img src="" alt="" class="messages-item__icon"> -->
+                    <div src="" alt="" class="message__icon"></div>
+                    <div class="message-text">
+                      <p class="message-text__name">Имя Фамилия | 9 "A"</p>
+                      <p class="message-text__desc">Домашнее задание за 30.05.2020</p>
+                    </div>
+                    <div class="message-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="message-item">
+                    <!-- <img src="" alt="" class="messages-item__icon"> -->
+                    <div src="" alt="" class="message__icon"></div>
+                    <div class="message-text">
+                      <p class="message-text__name">Имя Фамилия | 9 "A"</p>
+                      <p class="message-text__desc">Домашнее задание за 30.05.2020</p>
+                    </div>
+                    <div class="message-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-link">
+            <p class="block-link__title">Полезные ссылки</p>
+            <div class="block-link__item">
+              <div class="block-menu-link">
+                <div class="block-menu-link__icon">
+                  <i class="fas fa-user-friends"></i>
+                </div>
+                <p class="block-menu-link__title">Ученики</p>
+              </div>
+            </div>
+            <div class="blocl-link__item">
+              <div class="block-menu-link">
+                <div class="block-menu-link__icon">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <p class="block-menu-link__title">Мое портфолио</p>
+              </div>
+            </div>
+            <div class="blocl-link__item">
+              <div class="block-menu-link">
+                <div class="block-menu-link__icon">
+                  <i class="fas fa-newspaper"></i>
+                </div>
+                <p class="block-menu-link__title">Доска объявлений</p>
+              </div>
+            </div>
+            <div class="blocl-link__item">
+              <div class="block-menu-link">
+                <div class="block-menu-link__icon">
+                  <i class="fa fa-users"></i>
+                </div>
+                <p class="block-menu-link__title">Классы</p>
+              </div>
+            </div>
+            <div class="blocl-link__item">
+              <div class="block-menu-link">
+                <div class="block-menu-link__icon">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+                <p class="block-menu-link__title">Заявления</p>
+              </div>
+            </div>
+            <div class="blocl-link__item">
+              <div class="block-menu-link">
+                <div class="block-menu-link__icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <p class="block-menu-link__title">Расписания уроков</p>
+              </div>
+            </div>
+            <div class="blocl-link__item">
+              <div class="block-menu-link">
+                <div class="block-menu-link__icon">
+                  <i class="fa fa-file"></i>
+                </div>
+                <p class="block-menu-link__title">Нормативные док-ы</p>
+              </div>
+            </div>
+            <div class="blocl-link__item">
+              <div class="block-menu-link">
+                <div class="block-menu-link__icon">
+                  <i class="fas fa-house-user"></i>
+                </div>
+                <p class="block-menu-link__title">Родителии</p>
+              </div>
+            </div>
+            <div class="blocl-link__item">
+              <div class="block-menu-link">
+                <div class="block-menu-link__icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <p class="block-menu-link__title">Смена пароля</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/vanilla-calendar.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
