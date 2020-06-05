@@ -427,6 +427,9 @@ body {
     height: inherit;
     width: 100%;
   }
+  .block-link {
+    width: 100%;
+  }
 }
 @media (max-width: 440px) {
   .page__сontent {
