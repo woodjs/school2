@@ -249,7 +249,7 @@ body {
   width: 30px;
   height: 30px;
   overflow: hidden;
-  font-size: 24px;
+  font-size: 18px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -305,6 +305,12 @@ body {
     margin-top: 0;
     margin-left: 40px;
   }
+  .messages__title {
+    font-size: 18px;
+  }
+  .messages__desc {
+    font-size: 16px;
+  }
   .vanilla-calendar {
     margin-left: 0 !important;
   }
@@ -313,6 +319,14 @@ body {
   }
   .block-link {
     margin-left: 67px;
+    width: auto;
+  }
+  .block-menu-link__icon {
+    width: 25px;
+    height: 25px;
+  }
+  .block-menu-link__title {
+    font-size: 14px;
   }
 }
 @media (max-width: 1400px) {
